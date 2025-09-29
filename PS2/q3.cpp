@@ -1,11 +1,13 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int i = 1;
+    int i = 1, n;
+    cout<<"enter a number: ";
+    cin>> n;
     do
     {
         /* code */
-        cout<<i<<endl;
+        cout<<i<<" * "<<n<<" = "<<i * n<<endl;
         i++;
     } while (i<11);
     

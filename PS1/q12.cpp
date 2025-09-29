@@ -2,8 +2,8 @@
 #include<cmath>
 using namespace std;
 int main(){
-    int a,b,c;
-    int D;
+    float a,b,c;
+    float D;
     float r1, r2;
     cout<<"enter the coeff of quadratic equations : "<<endl;
     cin>>a>>b>>c;
@@ -21,10 +21,10 @@ int main(){
     }
     else
     {
-     int D1 = -D;
-     float r1i = (-b+sqrt(D1))/(2*a);
-     float r2i = (-b-sqrt(D1))/(2*a);
-     cout<<"the roots are imaginary and are ,"<<r1i<<"i and "<<r2i<<"i";
+     float D1 = -D;
+    //  float r1i = (-b+sqrt(D1))/(2*a);
+    //  float r2i = (-b-sqrt(D1))/(2*a);
+     cout<<"the roots are imaginary and are, "<<-b/(2*a)<<" + i"<<sqrt(D1)/(2*a)<<" and "<<-b/(2*a)<<" - i"<<sqrt(D1)/(2*a);
     }
     
     
